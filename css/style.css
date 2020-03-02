@@ -82,7 +82,9 @@ main#about img{
     background: center;
     width: 50%;
     height: 71vh;
-
 }
 
-
+main#contact {
+    text-align: center;
+    margin: 20px;
+}
