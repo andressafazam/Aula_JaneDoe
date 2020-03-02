@@ -84,7 +84,14 @@ main#about img{
     height: 71vh;
 }
 
+
+main#music{
+    width: 900px;
+    margin: 30px auto;
+}
+
 main#contact {
     text-align: center;
-    margin: 20px;
+    width: 900px;
+    margin: 30px auto;
 }
