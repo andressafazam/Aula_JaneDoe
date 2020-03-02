@@ -28,6 +28,10 @@ li a{
     color: #555;
 }
 
+li a.active{
+    font-weight: bold;
+}
+
 header h1{
     text-transform: uppercase;
 }
@@ -56,3 +60,29 @@ main#banner{
     height: 71vh;
     /* viewport   */
 }
+
+
+p cite{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    border: 100px;
+}
+
+p{
+    text-align: center;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+main#about img{
+    background: center;
+    width: 50%;
+    height: 71vh;
+
+}
+
+
