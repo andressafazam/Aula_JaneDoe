@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+     margin: 0; /*retiram as bordas que ja tem por padrao */
+    padding: 0; /*retiram as bordas que ja tem por padrao */
+}
+
+/* header start */
+header{
+    text-align: center;
+    border: 2px solid #ccc;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+li{
+    display: inline-block; /* nao pula linha, respeita o q estiver escrito */
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+}
+
+li a{
+    text-decoration: none;
+    color: #555;
+}
+
+header h1{
+    text-transform: uppercase;
+}
+/* header finish */
+
+/* footer start */
+
+footer{
+    background-color: #f2f2f2;
+}
+
+footer p{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
