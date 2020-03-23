@@ -1,97 +1,318 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
-body{
-    font-family: 'Raleway', sans-serif;
-     margin: 0; /*retiram as bordas que ja tem por padrao */
-    padding: 0; /*retiram as bordas que ja tem por padrao */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* header start */
-header{
-    text-align: center;
-    border: 2px solid #ccc;
+
+header {
+  text-align: center;
+  /* border: 2px solid #ccc; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 }
 
-ul{
-    list-style: none;
-    padding-left: 0px;
+nav ul {
+  list-style: none;
+  padding-left: 0px;
 }
 
-li{
-    display: inline-block; /* nao pula linha, respeita o q estiver escrito */
-    padding: 10px 20px;
-    /* border: 2px solid black; */
+nav li {
+  display: inline-block;
+  padding: 10px 20px;
+  /* border: 2px solid black; */
 }
 
-li a{
-    text-decoration: none;
-    color: #555;
+nav li a {
+  text-decoration: none;
+  color: #555;
 }
 
-li a.active{
-    font-weight: bold;
+nav li a.active {
+  font-weight: 700;
+  color: orange;
 }
 
-header h1{
-    text-transform: uppercase;
+header h1 {
+  text-transform: uppercase;
 }
-/* header finish */
+
+/* header end */
+
+main,
+main#contact,
+main#music {
+  margin-top: 134px;
+}
 
 /* footer start */
 
-footer{
-    background-color: #f2f2f2;
+footer {
+  background-color: #f2f2f2;
 }
 
-footer p{
-    text-align: center;
-    padding: 10px;
-    margin: 0;
+footer p {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
 }
+
 /* footer end */
 
 /* banner home */
-main#banner{
-    background-image: url(../img/jane.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 71vh;
-    /* viewport   */
+
+section#banner {
+  background-image: url('../img/jane.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 73vh;
+  /* viewport height */
 }
 
+/* banner home end */
 
-p cite{
-    text-align: center;
-    font-weight: bold;
-    font-style: normal;
-    border: 100px;
+/* about start */
+
+main#about {
+  text-align: center;
+  padding: 30px 0;
 }
 
-p{
-    text-align: center;
-    padding: 20px;
+main#about h2 {
+  font-size: 30px;
 }
 
-h2{
-    text-align: center;
+main#about img {
+  width: 450px;
 }
 
-main#about img{
-    background: center;
-    width: 50%;
-    height: 71vh;
+main#about p {
+  margin: 30px 0;
+  line-height: 35px;
 }
 
-
-main#music{
-    width: 900px;
-    margin: 30px auto;
+main#about cite {
+  font-size: 22px;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
 }
+
+/* about end */
+/* music start */
+
+main#music {
+  width: 900px;
+  max-width: 100%;
+  padding: 40px 0
+  margin-top: 150px;
+  /* margin: 30px auto; */
+}
+
+/* music end */
+
+/* contact end */
 
 main#contact {
+  width: 900px;
+  max-width: 100%;
+  margin-top: 150px;
+  padding: 40px 0
+  /* margin: 30px auto; */
+}
+
+/* home v2 */
+
+section#concept,
+section#songs {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+section#songs img {
+  width: 100%;
+}
+
+.duas-colunas {
+  overflow: hidden;
+}
+
+.duas-colunas>div {
+  width: 50%;
+  float: left;
+}
+
+section#songs li {
+  padding: 20px 0;
+}
+
+section#songs li strong {
+  color: orange;
+}
+
+/* contact v2 */
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-group {
+  margin: 0 0 10px;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+}
+
+.mapa {
+  padding-left: 30px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/* blog */
+
+.mini-banner{
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  /* border-bottom: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.mini-banner h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.posts{
+  width: 900px;
+  max-width: 100%;
+  min-height: 60vh;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.posts article {
+  width: 250px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.posts article .poster{
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/jane2.jpg);
+  background-size: cover;
+}
+
+.posts article h1 {
+  text-transform: uppercase;
+}
+
+
+@media(max-width: 768px) {
+  .duas-colunas>div {
+    width: 100%;
+  }
+
+  section#concept,
+  section#songs {
+    padding: 40px;
+  }
+
+  p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
     text-align: center;
-    width: 900px;
-    margin: 30px auto;
+  }
+
+  section#songs ol li {
+    font-size: 26px;
+  }
+
+  nav ul li a {
+    font-size: 24px;
+  }
+
+  main#music {
+    padding: 0 40px;
+  }
+
+  main#music iframe {
+    width: 100%;
+  }
+
+  main#music ul li {
+    font-size: 24px;
+  }
+
+  main#contact {
+    padding: 0 40px;
+  }
+
+  main#contact form {
+    font-size: 24px;
+  }
+
+  main#contact form input {
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  main#contact form button {
+    font-size: 22px;
+    padding: 10px 35px;
+    margin: 20px 0;
+  }
+
+  main#contact .form-group {
+    margin-bottom: 30px;
+  }
+
+  main#contact .mapa {
+    padding: 0;
+  }
 }
